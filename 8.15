@@ -1,0 +1,25 @@
+# FIXME (1): Prompt for four weights. Add all weights to a list. Output list.
+my_list = []
+weight1 = float(input('Enter weight 1:\n'))
+weight2 = float(input('Enter weight 2:\n'))
+weight3 = float(input('Enter weight 3:\n'))
+weight4 = float(input('Enter weight 4:\n'))
+my_list.extend([weight1, weight2, weight3, weight4])
+print(f'Weights: {my_list}')
+# FIXME (2): Output average of weights.
+print()
+avg = sum(my_list)/len(my_list)
+print(f'Average weight: {avg}')
+# FIXME (3): Output max weight from list.
+m = max(my_list)
+m = format(m,'.2f')
+print(f'Max weight: {m}')
+# FIXME (4): Prompt the user for a list index and output that weight in pounds and kilograms.
+i = int(input('\nEnter a list index location (0 - 3):\n'))
+p = format(my_list[i], '.2f')
+k = format(my_list[i]/2.2, '.2f')
+print(f'Weight in pounds: {p}')
+print(f'Weight in kilograms: {k}\n')
+# FIXME (5): Sort the list and output it.
+s = my_list.sort()
+print(f'Sorted list: {my_list}')
